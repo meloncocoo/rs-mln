@@ -1,4 +1,4 @@
-pub mod datetime_format {
+pub mod option_datetime_format {
     use chrono::NaiveDateTime;
     use serde::{self, Deserialize, Deserializer, Serializer};
 
