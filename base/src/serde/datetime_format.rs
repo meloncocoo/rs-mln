@@ -18,10 +18,3 @@ pub mod datetime_format {
         NaiveDateTime::parse_from_str(&s, "%Y-%m-%d %H:%M:%S").map_err(serde::de::Error::custom)
     }
 }
-
-// 使用示例：
-// #[derive(Serialize, Deserialize)]
-// struct MyStruct {
-//     #[serde(with = "datetime_format")]
-//     pub created_at: NaiveDateTime,
-// }
